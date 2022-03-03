@@ -1,0 +1,274 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#header-tree {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 141px;
+}
+
+#a-houpa {
+    color: #B5B5B5;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#a-vitrinis {
+    color: #000;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+#a-vitrinis-b {
+    color: #000;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+form button{
+    border: none;
+    background-color: #3F0B6D;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#errors {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#labelCores label{
+    background-color: #3F0B6D;
+    color: #fff;
+    border: none;
+}
+
+button#plusCores.btn.btn-primary {
+    background: #FFFFFF;
+    border: 0.767857px solid #F3F2F2;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 10%);
+    border-radius: 50%;
+}
+
+i.fa.fa-plus::before{
+    color: #3F0B6D;
+}
+
+i.fa.fa-minus::before{
+    color: #3F0B6D;
+}
+
+
+
+
+span#close {
+    color: #C5C5C5;
+    font-size: 40px;
+}
+
+button.close {
+    background-color: #fff;
+}
+
+div.modal-header {
+    margin-bottom: 20px;
+}
+
+div.modal-body {
+    margin-bottom: 20px;
+}
+
+div.modal-footer {
+    margin-bottom: 20px;
+}
+
+#modal input#testeDiogo.form-check-input{
+    background-color: #0c0b09;
+    border: none;
+}
+
+#modal input#exampleRadios1.form-check-input{
+    background-color: #fff;
+    border: none;
+}
+
+#modal input#exampleRadios2.form-check-input{
+    background-color: #FEFDF9;
+    border: none;
+}
+
+#modal input#exampleRadios3.form-check-input{
+    background-color: #C8C8C8;
+    border: none;
+}
+
+#modal input#exampleRadios4.form-check-input{
+    background-color: #222222;
+    border: none;
+}
+
+#modal input#exampleRadios5.form-check-input{
+    background-color: #A79881;
+    border: none;
+}
+
+#modal input#exampleRadios6.form-check-input{
+    background-color: #00BFCB;
+    border: none;
+}
+
+#modal input#exampleRadios7.form-check-input{
+    background-color: #CDEEFC;
+    border: none;
+}
+
+#modal input#exampleRadios8.form-check-input{
+    background-color: #1637E6;
+    border: none;
+}
+
+#modal input#exampleRadios9.form-check-input{
+    background-color: #214090;
+    border: none;
+}
+
+#modal input#exampleRadios10.form-check-input{
+    background-color: #F8C4E3;
+    border: none;
+}
+
+#modal input#exampleRadios11.form-check-input{
+    background-color: #F23DF5;
+    border: none;
+}
+
+#modal input#exampleRadios12.form-check-input{
+    background-color: #7F1CEF;
+    border: none;
+}
+
+
+#modal input#exampleRadios13.form-check-input{
+    background-color: #9905CC;
+    border: none;
+}
+
+#modal input#exampleRadios14.form-check-input{
+    background-color: #129731;
+    border: none;
+}
+
+#modal input#exampleRadios15.form-check-input{
+    background-color: #94EBA8;
+    border: none;
+}
+
+#modal input#exampleRadios16.form-check-input{
+    background-color: #FFFD00;
+    border: none;
+}
+
+#modal input#exampleRadios17.form-check-input{
+    background-color: #E2DECA;
+    border: none;
+}
+
+#modal input#exampleRadios18.form-check-input{
+    background-color: #D8AF72;
+    border: none;
+}
+
+#modal input#exampleRadios19.form-check-input{
+    background-color: #832619;
+    border: none;
+}
+
+#modal input#exampleRadios20.form-check-input{
+    background-color: #BC0000;
+    border: none;
+}
+
+#modal input#exampleRadios21.form-check-input{
+    background-color: #FF0606;
+    border: none;
+}
+
+#modal input#exampleRadios22.form-check-input{
+    background-color: #FF8A00;
+    border: none;
+}
+
+#modal input#exampleRadios23.form-check-input{
+    background-color: #FFBDA8;
+    border: none;
+}
+#modal input#exampleRadios24.form-check-input{
+    background-color: #F7D6BE;
+    border: none;
+}
+
+#modal input#exampleRadios25.form-check-input{
+    background: linear-gradient(180deg, #E1C42D 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(0deg, #F9EFBB, #F9EFBB);
+
+    border: none;
+}
+
+#modal input#exampleRadios26.form-check-input{
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(0deg, #ADADAD, #ADADAD);
+    ;
+    border: none;
+}
+
+#modal input#exampleRadios27.form-check-input{
+    background-color: #214090;
+    border: none;
+}
+
+#modal input#exampleRadios28.form-check-input{
+    background-color: #E16868;
+    border: none;
+}
+
+label#estoqueRoxo.form-check-input{
+    width: 21.5px;
+    height: 21.5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    background-color: #7F1CEF;
+    border: none;
+}
+
+
+
+button.btn.btn-primary.btn-block.mb-4 {
+    border: none;
+    background-color: #3F0B6D;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 20px;
+    width: 166.98px;
+    height: 40px;
+}
+
+label.btn.btn-primary {
+    background: #FFFFFF;
+    border: 1px solid #F3F2F2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: none;
+    color: #3F0B6D;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}

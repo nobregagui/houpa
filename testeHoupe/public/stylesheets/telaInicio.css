@@ -1,0 +1,87 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#header-tree {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 141px;
+}
+
+#a-houpa {
+    color: #B5B5B5;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#a-vitrinis {
+    color: #000;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+#a-vitrinis-b {
+    color: #000;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+#section-pesquisar {
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+#section-pesquisar h1 {
+    font-size: 12px;
+    color: #3F0B6D;
+    border-bottom: 1px solid #3F0B6D;
+    position: absolute;
+    left: 120px;
+}
+
+#section-pesquisar form{
+    padding-bottom: 20px;
+}
+
+#container {
+    margin-top: 20px;
+}
+
+main button {
+    border: none;
+    background-color: #3F0B6D;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+a.btn.btn-danger{
+    border: none;
+    background-color: #1f0536;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+a.btn.btn-warning{
+    border: none;
+    background-color: #6f1cb8;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+a.btn.btn-primary{
+    border: none;
+    background-color: #3F0B6D;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+main th{
+    color: #000;
+}
+

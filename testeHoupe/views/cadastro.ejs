@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/cadastro.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+</head>
+<body>
+    <%- include('./partials/header') %>
+
+    
+    
+        <section class=".bg-gradient-warning" id="header-tree">
+            <nav class="navbar container navbar-expand-lg navbar-dark">
+                <a href="#" class="navbar-brand nav-link active" id="a-houpa">Houpa!</a>
+                <a href="#" class="navbar-brand"><i class="fas fa-angle-right" style="color: black;"></i></a>
+                <a href="#" class="navbar-brand" id="a-vitrinis">Vitrines<i class="bi bi-cup"></i></a>
+            </nav>
+            <nav class="navbar container navbar-expand-lg navbar-dark">
+                <a href="#" class="navbar-brand" id="a-houpa-b"><img src="../images/Caminho 4341.png" alt=""></a>
+                <a href="#" class="navbar-brand" id="a-vitrinis-b">Vitrines<i class="bi bi-cup"></i></a>
+            </nav>
+        </section>
+        <div class="container" id="errors">
+          <div class="row mb-4">
+            <div class="col">
+              <% if (typeof(errors) != "undefined") { %>
+                <ul>
+                  <h1 style="color: red;">Erro ao cadastrar produto!</h1>
+                  <% errors.forEach(error => { %>
+                      <li><%= error.msg %> </li>
+                  <% }) %>
+                </ul>
+            <% } %>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+            <form action="/users/cadastro" method="post">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                        <h1>Cadastro de Produtos</h1>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline">
+                        <button id="salvarProduto" type="submit" style='font-size:24px'><i class="fa fa-save"></i> Salvar Produto </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline">
+                        <span><img src="../images/XMLID 1603.png" alt=""> Informações do Produto</span>
+                      </div>
+                    </div>                   
+                  </div>
+                <div class="row mb-4">
+                  <div class="col">
+                    <div class="form-outline">
+                      <label class="form-label" for="form3Example1">Nome do produto*</label>
+                      <input type="text" name="nome" placeholder="TOP CROPPED VISCOSE" id="nome" required class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-outline">
+                      <label class="form-label" for="form3Example2">Preço</label>
+                      <input required type="number" name="preco" placeholder="R$ 150,00" id="preco" step="0.01" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <div class="col">
+                    <img style="margin-right: 15px;" src="../images/Vector.png" alt="">
+                    <img src="../images/Vector2.png" alt="">
+                  </div>
+                </div>    
+
+              
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3">Descrição da peça*</label>  
+                  <textarea required class="form-control" id="descricao" name="descricao" placeholder="TOP CROPPED VISCOSE é o cropped básico que combina com tudo! Com elasticidade na medida certa, o cropped é feito em crepe de viscose." rows="3"></textarea>
+                </div>
+                <div class="col" id="labelCores">
+                  <h1>Selecionar tamanhos</h1>
+                  <p>Selecione aos tamanhos para criar a grade</p>
+                  <br>
+                  <h2 style="margin-bottom: 20px;">Letras</h2>
+                  <div class="form-outline">
+                    <input type="radio" class="btn-check" name="tamanho" value="P" id="btn-check" autocomplete="off">
+                    <label class="btn btn-primary"  for="btn-check">P</label>
+
+                    <input type="radio" class="btn-check" name="tamanho" value="PP" id="btn-checkPP"  autocomplete="off">
+                    <label class="btn btn-primary" for="btn-checkPP">PP</label>
+
+                    <input type="radio" class="btn-check" name="tamanho" value="M" id="btn-checkM" autocomplete="off">
+                    <label class="btn btn-primary" for="btn-checkM">M</label>
+
+                    <input type="radio" class="btn-check" name="tamanho" id="btn-checkG"  autocomplete="off">
+                    <label class="btn btn-primary" for="btn-checkG">G</label>
+
+                    <input type="radio" class="btn-check" name="tamanho" value="EXG" id="btn-checkEXG" autocomplete="off">
+                    <label class="btn btn-primary" for="btn-checkEXG">EXG</label>
+
+                    <input type="radio" class="btn-check" name="tamanho" value="G1" id="btn-checkG1" autocomplete="off">
+                    <label class="btn btn-primary" for="btn-checkG1">G1</label>
+
+                    <input type="radio" class="btn-check" name="tamanho" value="G2" id="btn-checkG2" autocomplete="off">
+                    <label class="btn btn-primary" for="btn-checkG2">G2</label>
+
+                    <input type="radio" class="btn-check" name="tamanho" value="G3" id="btn-checkG3" autocomplete="off">
+                    <label class="btn btn-primary" for="btn-checkG3">G3</label>
+
+                    <input type="radio" class="btn-check" name="tamanho" value="G4" id="btn-checkG4" autocomplete="off">
+                    <label class="btn btn-primary" for="btn-checkG4">G4</label>
+                  </div>
+                  <br>
+                </div>
+                <h2 style="margin-bottom: 20px;">Cores</h2>
+                <div class="col" id="modal">
+                  <div class="form-outline">
+                    <!-- Botão para acionar modal -->
+                    <button id="plusCores" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+                      <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title" id="exampleModalLabel">Adicione as cores</h1>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                              <span id="close" aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h3>Cores Sólidas</h3>
+                            <p>Selecione e adicione as cores.</p>
+                            <div class="col">
+                              <div class="form-outline">
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios" value="#fff">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios2" value="option2">
+            
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios3" value="option3">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios4" value="option4">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios5" value="option5">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios6" value="option6">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios7" value="option7">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios8" value="option8">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios9" value="option9">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios10" value="option10">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios11" value="option11">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios12" value="option12">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios13" value="option13">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios14" value="option14">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios15" value="option15">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios16" value="option16">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios17" value="option17">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios18" value="option18">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios19" value="option19">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios20" value="option20">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios21" value="option21">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios22" value="option22">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios23" value="option23">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios24" value="option24">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios25" value="option25">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios26" value="option26">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios27" value="option27">
+
+                                <input class="form-check-input" type="radio" name="cores" id="exampleRadios28" value="option28">
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Salvar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+                <h2 style="margin-bottom: 20px;">Estoque</h2>
+                <div class="form-outline mb-4" >
+                  <label class="form-check-input" type="radio" name="estoqueRoxo" id="estoqueRoxo"></label><span> Roxo</span>
+                </div>
+                <br>
+                <div class="form-outline mb-4">
+                  <div class="col">
+                    <div class="form-outline" id="estoqueLabel">
+                      <!-- Estoque P -->
+
+                      <button id="plusCores" type="button" class="btn btn-primary" >
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                      </button>
+                      <label style="height: 
+                      60px;" class="btn btn-primary" for="btn-check-estoqueP">P</label>
+                      <button id="plusCores" type="button" class="btn btn-primary" >
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                      </button>
+
+                      <!-- Estoque M -->
+
+                      <button style="margin-left: 20px;" id="plusCores" type="button" class="btn btn-primary">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                      </button>
+                      <label style="height: 
+                      60px;" class="btn btn-primary" for="btn-check-estoqueM">M</label>
+                      <button id="plusCores" type="button" class="btn btn-primary" >
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                      </button>
+
+                      <!-- Estoque G -->
+
+                      <button style="margin-left: 20px;" id="plusCores" type="button" class="btn btn-primary">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                      </button>
+                      <label style="height: 
+                      60px;" class="btn btn-primary" for="btn-check-estoqueG">G</label>
+                      <button id="plusCores" type="button" class="btn btn-primary" >
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+
+                
+        </div>
+        </form>
+    </body> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</html>
